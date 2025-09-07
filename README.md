@@ -24,7 +24,7 @@ Este repositorio en particular representa en BFF que tiene los servicios que ent
 #### La base de datos es de Oracle Cloud.
 
 
-## 📡 API Reference para porcesos batch.
+## 📡 API Reference
 
 #### Endpoint para Cuentas Anuales (Retorna solo el id de la cuenta)
 ```bash
