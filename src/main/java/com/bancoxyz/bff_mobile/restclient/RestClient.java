@@ -1,0 +1,15 @@
+package com.bancoxyz.bff_mobile.restclient;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
+
+@FeignClient(name = "backend", url = "http://localhost:8090/backend/api")
+public interface RestClient {
+  
+  @GetMapping("/transaction")
+	List<TransactionResponse> findAllTransactions();
+}
