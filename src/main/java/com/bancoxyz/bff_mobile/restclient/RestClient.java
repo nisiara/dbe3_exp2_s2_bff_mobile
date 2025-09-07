@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.bancoxyz.bff_mobile.model.dto.InterestResponse;
 import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
 
 @FeignClient(name = "backend", url = "http://localhost:8090/backend/api")
@@ -13,6 +14,7 @@ public interface RestClient {
   @GetMapping("/transaction")
 	List<TransactionResponse> findAllTransactions();
 
-  @GetMapping("/invalid-transaction")
-  List<TransactionResponse> invalidTransactions();
+  @GetMapping("/interest")
+  List<InterestResponse> findAllInterests();
 }
+
