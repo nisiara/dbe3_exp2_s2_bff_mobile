@@ -13,7 +13,6 @@ import com.bancoxyz.bff_mobile.model.dto.AnnualAccountResponse;
 import com.bancoxyz.bff_mobile.model.dto.InterestResponse;
 import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
 import com.bancoxyz.bff_mobile.service.BFFService;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
