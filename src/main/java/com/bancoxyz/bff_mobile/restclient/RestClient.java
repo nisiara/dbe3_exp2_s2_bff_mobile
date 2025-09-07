@@ -12,4 +12,7 @@ public interface RestClient {
   
   @GetMapping("/transaction")
 	List<TransactionResponse> findAllTransactions();
+
+  @GetMapping("/invalid-transaction")
+  List<TransactionResponse> invalidTransactions();
 }

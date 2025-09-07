@@ -21,5 +21,12 @@ public class BFFService {
   public List<TransactionResponse> findAllTransactions() {
 		return restClient.findAllTransactions();
 	}
+
+  public List<TransactionResponse> invalidTransactions() {
+    return findAllTransactions().stream()
+      .filter(transaction -> transaction.getType().equalsIgnoreCase("invalid"))
+      .toList();
+  }
   
+
 }

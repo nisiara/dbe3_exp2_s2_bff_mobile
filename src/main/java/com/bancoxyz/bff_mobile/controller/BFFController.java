@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
 import com.bancoxyz.bff_mobile.service.BFFService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @CrossOrigin
@@ -29,4 +31,11 @@ public class BFFController {
   public ResponseEntity<List<TransactionResponse>> getAllTransactions(){
     return ResponseEntity.ok(bffService.findAllTransactions());
   }
+
+  @GetMapping("/invalid-transaction")
+  public ResponseEntity<List<TransactionResponse>> getInvalidTransactions(){
+    return ResponseEntity.ok(bffService.invalidTransactions());
+  }    
+  
+  
 }
