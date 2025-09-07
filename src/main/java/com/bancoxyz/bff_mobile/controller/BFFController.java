@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bancoxyz.bff_mobile.model.dto.AnnualAccountResponse;
 import com.bancoxyz.bff_mobile.model.dto.InterestResponse;
 import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
 import com.bancoxyz.bff_mobile.service.BFFService;
@@ -43,6 +44,11 @@ public class BFFController {
   @GetMapping("/interest")
   public ResponseEntity<List<InterestResponse>> getAllInterests() {
     return ResponseEntity.ok(bffService.findAllInterests());
+  }
+
+  @GetMapping("/annual-account")
+  public ResponseEntity<List<AnnualAccountResponse>> getAllAnnualAccounts() {
+    return ResponseEntity.ok(bffService.findAllAnnualAccounts());
   }
   
   
