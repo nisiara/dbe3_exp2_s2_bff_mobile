@@ -1,9 +1,9 @@
-# Desarrollo Backend 3 | Exp2-S1
+# Desarrollo Backend 3 | Exp2-S2
 
 
 ## Objetivo del proyecto
 
-En este proyecto de la semana 1 de la experiencia 2 implementa un Backend for Frontend (BFF) con Spring Boot.
+En este proyecto de la semana 2 de la experiencia 2 implementa un Backend for Frontend (BFF) con Spring Boot.
 
 
 Este repositorio en particular representa en BFF que tiene los servicios que entregan la información epecífica para el Frontend. En este caso es un Frontend para dispositivos moviles.
