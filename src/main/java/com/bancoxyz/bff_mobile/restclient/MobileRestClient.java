@@ -10,7 +10,7 @@ import com.bancoxyz.bff_mobile.model.dto.InterestResponse;
 import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
 
 @FeignClient(name = "backend", url = "http://localhost:8090/backend/api")
-public interface RestClient {
+public interface MobileRestClient {
   
   @GetMapping("/transaction")
 	List<TransactionResponse> findAllTransactions();

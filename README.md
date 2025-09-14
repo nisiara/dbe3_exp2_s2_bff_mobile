@@ -43,4 +43,4 @@ curl -X GET http://localhost:8092/api/bff-mobile/invalid-transaction
 
 
 ## 🔗 Link
-[![Github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nisiara/dbe3_exp2_s1_bff_mobile.git)
+[![Github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nisiara/dbe3_exp2_s2_bff_mobile.git)
