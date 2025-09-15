@@ -1,4 +1,3 @@
-// Paquete que contiene los controladores REST del BFF móvil
 package com.bancoxyz.bff_mobile.controller;
 
 import java.util.List;
