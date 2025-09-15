@@ -41,7 +41,7 @@ curl -X GET http://localhost:8082/api/bff-mobile/interest
 #### Endpoint Transacciones
 Válida que las transacciones sean de tipo 'valid'. Retorna el id, fecha, monto y tipo de transacción.
 ```bash
-curl -X GET http://localhost:8082/api/bff-mobile/invalid-transaction
+curl -X GET http://localhost:8082/api/bff-mobile/valid-transaction
 ```
 
 
