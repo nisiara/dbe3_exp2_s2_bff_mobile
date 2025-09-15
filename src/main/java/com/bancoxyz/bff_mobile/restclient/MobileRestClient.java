@@ -9,7 +9,7 @@ import com.bancoxyz.bff_mobile.model.dto.AnnualAccountResponse;
 import com.bancoxyz.bff_mobile.model.dto.InterestResponse;
 import com.bancoxyz.bff_mobile.model.dto.TransactionResponse;
 
-@FeignClient(name = "backend", url = "http://localhost:8090/backend/api")
+@FeignClient(name = "backend", url = "http://localhost:8080/backend/api") // Configuración del cliente Feign apuntando al backend principal
 public interface MobileRestClient {
   
   @GetMapping("/transaction")

@@ -9,5 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 public class AnnualAccountResponse {
-  private String accountId;
+  private String transactionType;
+  private Integer amount;
+  private String transactionDescription;
 }

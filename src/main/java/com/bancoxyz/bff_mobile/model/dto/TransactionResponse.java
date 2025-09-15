@@ -5,10 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+@Data 
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
+
 public class TransactionResponse {
   private Long id;
   private String transactionDate;

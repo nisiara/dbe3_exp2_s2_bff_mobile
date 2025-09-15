@@ -6,7 +6,7 @@
 En este proyecto de la semana 2 de la experiencia 2 implementa un Backend for Frontend (BFF) con Spring Boot.
 
 
-Este repositorio en particular representa en BFF que tiene los servicios que entregan la información epecífica para el Frontend. En este caso es un Frontend para dispositivos moviles.
+Este repositorio en particular representa en BFF que tiene los servicios que entregan la información epecífica para el Frontend especializado para dispositivos moviles.
 
 
 ## 🛠️ Requisitos
@@ -26,19 +26,22 @@ Este repositorio en particular representa en BFF que tiene los servicios que ent
 
 ## 📡 API Reference
 
-#### Endpoint para Cuentas Anuales (Retorna solo el id de la cuenta)
+#### Endpoint para Cuentas Anuales 
+Se realiza una validación para transaccines con montos y descripciones válidas. Retorna el tipo, monto y la descripción de la transacción.
 ```bash
-curl -X GET http://localhost:8092/api/bff-mobile/annual-account
+curl -X GET http://localhost:8082/api/bff-mobile/annual-account
 ```
 
-#### Endpoint para Intereses (Retorna el nombre del cliente y el balance)
+#### Endpoint para Intereses
+Se realiza una validación para lista con montos y nombre de cliente válidos Retorna el nombre del cliente y el balance.
 ```bash
-curl -X GET http://localhost:8092/api/bff-mobile/interest
+curl -X GET http://localhost:8082/api/bff-mobile/interest
 ```
 
-#### Endpoint Transacciones (Retorna solo las transacciones de tipo 'invalid')
+#### Endpoint Transacciones
+Válida que las transacciones sean de tipo 'valid'. Retorna el id, fecha, monto y tipo de transacción.
 ```bash
-curl -X GET http://localhost:8092/api/bff-mobile/invalid-transaction
+curl -X GET http://localhost:8082/api/bff-mobile/invalid-transaction
 ```
 
 
